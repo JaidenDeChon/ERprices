@@ -39,7 +39,6 @@
       "@vue/standard",
       "@vue/typescript"
     ],
-    "rules": {},
     "parserOptions": {
       "parser": "@typescript-eslint/parser"
     }

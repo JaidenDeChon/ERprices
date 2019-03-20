@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <div id="nav" class="material-shadow">
       <div class="links">
         <router-link to="/">Home</router-link>
         <router-link to="/about">About</router-link>
@@ -9,7 +9,7 @@
       <div class="logo">
         <p>
           <span class="bold">ER</span>
-          <span class="llight">prices</span>
+          <span class="light">prices</span>
         </p>
       </div>
     </div>
@@ -19,12 +19,23 @@
 
 <style lang="sass">
 
+$logo-blue: #0C479D
+$logo-red: #e80000
+
+$gradient-blue-1: #0575E6
+$gradient-blue-2: #021B79
+
+$gradient-orange-1: #ff9966
+$gradient-orange-2: #ff5e62
+
 html, body
   margin: 0
-  padding: 0
+  padding: 20px 0
 
-  height: 100vh
+  // height: 100%
   width: 100vw
+
+  background: fixed linear-gradient(45deg, $gradient-blue-1, $gradient-blue-2)
 
 // Reset for mobile browsers
 h1, h2, h3, h4, h5, h6
@@ -35,24 +46,31 @@ h1, h2, h3, h4, h5, h6
   font-family: Arial, sans-serif, 'IBM Plex Sans','Quicksand'
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-  color: #0C479D
+  color: #555
+  width: 90vw
+  margin: 0 auto
+
+.material-shadow
+
+  font-family: 'IBM Plex Sans'
+  font-weight: 700
+  background: #fff
+  border-radius: 15px
+  box-shadow: 0 8px 60px rgba(0, 0, 0, 0.2), 0 6px 25px rgba(0, 0, 0, 0.15)
+  padding: 20px
+  margin: 40px 0
 
 #nav
 
-  width: 90%
+  // width: 90%
 
-  margin: 20px auto
-  padding: 20px 0
-
-  // border: solid red
+  margin: 0 auto
+  padding: 20px
 
   display: flex
   align-items: center
   justify-content: space-between
   flex-direction: column-reverse
-
-  border-radius: 15px
-  box-shadow: 0 8px 60px rgba(12, 71, 157, 0.2), 0 6px 25px rgba(12, 71, 157, 0.15)
 
   .links
 
@@ -66,7 +84,7 @@ h1, h2, h3, h4, h5, h6
 
     a
 
-      color: #0C479D
+      color: #555
       text-decoration: none
       font-weight: bold
 
@@ -82,18 +100,16 @@ h1, h2, h3, h4, h5, h6
       height: 100%
       padding: 0
       margin: 20px
-      // border: solid red
-
 
     .bold
 
       font-weight: 700
-      color: #e80000
+      color: $logo-red
 
     .light
 
       font-weight: 300
-      color: #0C479D
+      color: $logo-blue
 
 // smartphones, portrait iPhone, portrait 480x320 phones (Android)
 // @media (min-width: 280px)
@@ -102,15 +118,17 @@ h1, h2, h3, h4, h5, h6
 // @media (min-width: 400px)
 
 // Landscape iPhones
-@media (min-width: 568px)
+// @media (min-width: 568px)
+
+// Portrait iPad
+@media (min-width: 750px)
 
   #nav
 
     flex-direction: row
     justify-content: space-between
-    width: 85%
     padding: 20px 40px
-    margin: 40px auto
+    margin: 0 auto
 
     .links, .logo
 
@@ -127,11 +145,6 @@ h1, h2, h3, h4, h5, h6
     .logo
 
       text-align: right
-
-// Portrait iPad
-@media (min-width: 750px)
-
-  #nav
 
     .links
 
@@ -150,7 +163,5 @@ h1, h2, h3, h4, h5, h6
 
 // 4K screens
 // @media (min-width: 1400px)
-
-
 
 </style>

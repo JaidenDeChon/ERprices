@@ -1,17 +1,20 @@
 <template>
   <div class="home">
-    <!-- <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/> -->
+  	<CallToAction/>
+    <HospitalSearch/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
+import HospitalSearch from '@/components/HospitalSearch.vue' // @ is an alias to /src
+import CallToAction from '@/components/CallToAction.vue'
 
 export default Vue.extend({
   name: 'home',
   components: {
-    HelloWorld
+  	CallToAction,
+    HospitalSearch
   }
 })
 </script>
