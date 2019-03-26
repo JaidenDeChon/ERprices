@@ -1,4 +1,27 @@
-<template>
+<template lang="pug">
+
+	div(class="material-shadow hospital-search")
+
+		div(class="header")
+
+			p Choose an option...
+
+			button(class="blue-hover")
+				i(class="fas fa-question")
+
+		div(class="options-container")
+
+			button(class="option blue-hover")
+				img(src="../assets/undraw_directions_x53j.svg")
+				p Detect my location
+
+			button(class="option blue-hover")
+				img(src="../assets/undraw_navigation_lytx.svg")
+				p Enter a zipcode
+
+</template>
+
+<!-- <template>
 	<div class="material-shadow hospital-search">
 
 		<div class="header">
@@ -22,7 +45,7 @@
 		</div>
 
 	</div>
-</template>
+</template> -->
 
 <script lang="ts">
 import Vue from 'vue'
@@ -40,6 +63,10 @@ $gradient-blue-2: #021B79
 
 $gradient-orange-1: #ff9966
 $gradient-orange-2: #ff5e62
+
+.hospital-search
+
+  	z-index: 1
 
 html, body
 	margin: 0
