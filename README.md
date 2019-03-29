@@ -1,3 +1,5 @@
+Live demo (in progress) available at ERprices.netlify.com
+
 # erprices
 
 ## Project setup
