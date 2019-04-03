@@ -21,32 +21,6 @@
 
 </template>
 
-<!-- <template>
-	<div class="material-shadow hospital-search">
-
-		<div class="header">
-			<p>Choose an option...</p>
-			<button class="blue-hover">	
-				<i class="fas fa-question"></i>
-			</button>
-		</div>
-
-		<div class="options-container">
-
-			<button class="option blue-hover">
-				<img src="../assets/undraw_directions_x53j.svg"></img>
-				<p>Detect my location</p>
-			</button>
-
-			<button class="option blue-hover">
-				<img src="../assets/undraw_navigation_lytx.svg">
-				<p>Enter my zipcode</p>
-			</button>
-		</div>
-
-	</div>
-</template> -->
-
 <script lang="ts">
 import Vue from 'vue'
 
