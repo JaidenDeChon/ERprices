@@ -41,6 +41,11 @@ $gradient-orange-2: #ff5e62
 .hospital-search
 
   	z-index: 1
+  	box-sizing: border-box
+  	// border: solid red
+
+  	width: 80vw
+  	margin: 40px auto
 
 html, body
 	margin: 0

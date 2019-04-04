@@ -48,7 +48,7 @@
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
     color: #555
-    width: 90vw
+    // width: 90vw
     margin: 0 auto
 
   .material-shadow
@@ -64,6 +64,8 @@
   #nav
 
     z-index: 100
+
+    width: 80vw
 
     margin: 0 auto
     padding: 20px

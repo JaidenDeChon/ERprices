@@ -21,8 +21,11 @@ export default Vue.extend({
 
 .hero-container
 
+	box-sizing: border-box
+	// border: solid black
+
 	// height: 400px
-	width: 90%
+	width: 80vw
 
 	margin: 40px auto 40px
 

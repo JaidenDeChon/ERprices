@@ -141,7 +141,10 @@
 		// border: solid white
 
 		height: 600px
-		width: 100%
+		width: 100vw
+
+		margin: 0 auto
+		padding-left: 10vw
 
 		display: flex
 		align-items: center
@@ -164,7 +167,7 @@
 
 			&:last-child
 
-				// border-right: 15px solid transparent
+				border-right: 10vw solid transparent
 
 			&:hover
 
