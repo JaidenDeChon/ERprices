@@ -2,17 +2,19 @@
 
   div(id="app")
 
-    div(id="nav" class="material-shadow")
+    div(id="nav-wrapper")
 
-      div(class="links")
-        router-link(to="/") Home
-        router-link(to="/about") About
-        router-link(to="/disclaimer") Disclaimer
+      div(id="nav" class="material-shadow")
 
-      div(class="logo")
-        p
-          span(class="bold") ER
-          span(class="light") prices
+        div(class="links")
+          router-link(to="/") Home
+          router-link(to="/about") About
+          router-link(to="/disclaimer") Disclaimer
+
+        div(class="logo")
+          p
+            span(class="bold") ER
+            span(class="light") prices
 
     router-view
 
@@ -28,6 +30,11 @@
 
   $gradient-orange-1: #ff9966
   $gradient-orange-2: #ff5e62
+
+  *
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
 
   html, body
     margin: 0
@@ -48,7 +55,7 @@
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
     color: #555
-    // width: 90vw
+    width: 100vw
     margin: 0 auto
 
   .material-shadow
@@ -57,18 +64,25 @@
     font-weight: 700
     background: #fff
     border-radius: 15px
-    box-shadow: 0 8px 60px rgba(0, 0, 0, 0.2), 0 6px 25px rgba(0, 0, 0, 0.15)
+    // box-shadow: 0 8px 60px rgba(0, 0, 0, 0.2), 0 6px 25px rgba(0, 0, 0, 0.15)
     padding: 20px
     margin: 40px 0
+
+  #nav-wrapper
+
+    width: 90vw
+    margin: 0 auto
+    padding: 0
+
 
   #nav
 
     z-index: 100
 
-    width: 80vw
+    width: 100%
 
-    margin: 0 auto
-    padding: 20px
+    margin: 0
+    padding: 20px 0 40px 0
 
     display: flex
     align-items: center
@@ -140,7 +154,7 @@
 
       .links, .logo
 
-        width: 49%
+        // width: 49%
 
       .links
 

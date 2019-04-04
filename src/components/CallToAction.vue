@@ -25,7 +25,7 @@ export default Vue.extend({
 	// border: solid black
 
 	// height: 400px
-	width: 80vw
+	width: 90vw
 
 	margin: 40px auto 40px
 

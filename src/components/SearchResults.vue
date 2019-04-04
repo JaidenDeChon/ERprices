@@ -144,7 +144,7 @@
 		width: 100vw
 
 		margin: 0 auto
-		padding-left: 10vw
+		padding-left: 5vw
 
 		display: flex
 		align-items: center
@@ -167,13 +167,13 @@
 
 			&:last-child
 
-				border-right: 10vw solid transparent
+				border-right: 5vw solid transparent
 
 			&:hover
 
 				.card
 
-					box-shadow: 0 40px 40px rgba(0,0,0,.16)
+					box-shadow: 0 20px 20px rgba(0,0,0,.08)
 					transform: translate(0, -20px)
 
 					.title-cont, button
@@ -192,11 +192,12 @@
 				font-family: 'IBM Plex Sans'
 
 				background: #ffffff
-				box-shadow: 0 20px 20px rgba(0,0,0,.08)
 				transition: all 250ms cubic-bezier(.02, .01, .47, 1)
 
 				display: flex
 				flex-direction: column
+
+				cursor: default
 
 				div
 

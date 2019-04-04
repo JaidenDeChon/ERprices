@@ -44,7 +44,7 @@ $gradient-orange-2: #ff5e62
   	box-sizing: border-box
   	// border: solid red
 
-  	width: 80vw
+  	width: 90vw
   	margin: 40px auto
 
 html, body
@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6
 	&:hover
 
 		background: $gradient-orange-2
-		box-shadow: 0 8px 60px rgba(255, 94, 98, 0.5), 0 6px 25px rgba(255, 94, 98, 0.5)
+		// box-shadow: 0 8px 60px rgba(255, 94, 98, 0.5), 0 6px 25px rgba(255, 94, 98, 0.5)
 		color: #ffffff
 
 .header
